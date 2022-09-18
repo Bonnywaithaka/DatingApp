@@ -13,7 +13,7 @@ const SalesWindow = () => {
     const getData = async () => {
       const apiGetData = await fetch(
         //"https://datausa.io/api/data?drilldowns=Nation&measures=Population"
-        "https://sprinbbootawstestapp-env.eba-cs5nbew8.eu-west-3.elasticbeanstalk.com/allPosts"
+        "http://sprinbbootawstestapp-env.eba-cs5nbew8.eu-west-3.elasticbeanstalk.com/allPosts"
       );
       const res = await apiGetData.json();
       console.log(res);
